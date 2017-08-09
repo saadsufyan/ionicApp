@@ -1,31 +1,38 @@
 
-<ion-header>
-  <ion-navbar color="dark">
-    <ion-title>register</ion-title>
-  </ion-navbar>
+<ion-header class="background-img">
+    <ion-icon class="back-icon" ios="ios-arrow-back" md="ios-arrow-back" (click)="backToLogin()"></ion-icon>
 </ion-header>
 
-<ion-content class="login-content" padding>
+<ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round">
+    <ion-row class="logo-row">
+    <!--><div class="image-center"><-->
+      <ion-col class=image-center width-67>
+        <img src="assets/logo_white.png">
+      </ion-col>
+    <!--></div><-->
+
+  </ion-row>  
   <div class="login-box">
     <form (ngSubmit)="register()" #registerForm= "ngForm">
       <ion-row>
         <ion-col>
           <ion-list insert>
 
-            <ion-item>
-              <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
-            </ion-item>
+            <ion-input class="input-user" type="text" placeholder="Username" name="username" [(ngModel)]="registerCredentials.username">username</ion-input>
+            <ion-input class="input-email" type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email">email</ion-input>
+            <ion-input class="input-phone" type="text" placeholder="Phone Number*" name="phone" [(ngModel)]="registerCredentials.phone">phone</ion-input>
+            <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password">password</ion-input>
+            <ion-input class="input-confirmpassword" type="password" placeholder="confirm Password" name="confirmPassword" [(ngModel)]="registerCredentials.confirmPassword">confirmPassword</ion-input>
 
-            <ion-item>
-              <ion-input type="password" placeholder="Passowrd" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
-            </ion-item>
           </ion-list>
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col class="signup-col">
-          <button ion-button class = "submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Register</button>
+          <div class="btn" text-center>
+            <button ion-button col-8 col-sm class="register-btn"  round outline color="light"  [disabled]="!registerForm.form.valid">Sign Up</button>
+          </div>
         </ion-col>
       </ion-row>
 

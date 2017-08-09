@@ -1,32 +1,44 @@
 import { Component } from '@angular/core';
 import { IonicPage,AlertController,LoadingController,Loading, NavController, NavParams } from 'ionic-angular';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
+import { MainPage } from '../main/main';
+import { HometabPage } from '../hometab/hometab';
 
 @IonicPage()
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
 })
+
 export class LoginPage {
 
   loading: Loading;
-  registerCredentials = {email: '', password: ''};
+  loginCredentials = {username: '', password: ''};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private auth: AuthServiceProvider, private alertCtrl: AlertController, private loadingCtrl: LoadingController) {
-  
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, private auth: AuthServiceProvider, private alertCtrl: AlertController, private loadingCtrl: LoadingController) {}
 
   public createAccount(){
+    console.log("signup btn clicked");
     this.navCtrl.push('RegisterPage');
+  }
+
+  public goToMainPage(){
+    this.navCtrl.push("HometabPage");
+  }
+
+  public clickForgetPassword(){
+    this.navCtrl.push('ForgetPasswordPage');
   }
 
   public login(){
     this.showLoading()
-    this.auth.login(this.registerCredentials).subscribe(allowed => {
+    this.auth.login(this.loginCredentials).subscribe(allowed => {
       if(allowed){
-        this.navCtrl.setRoot('homePage');
-      }else{
+        this.navCtrl.setRoot('HometabPage');
+        console.log("login_scene on hai");
+      } else {
         this.showError("Access Denied");
+        console.log("login_why im here ?");
       }
     },
     error => {
@@ -51,5 +63,6 @@ export class LoginPage {
       buttons: ['OK']
     });
     alert.present(prompt);
+    console.log("need to move now from here");
   }
 }

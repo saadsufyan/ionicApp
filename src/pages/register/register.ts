@@ -10,9 +10,13 @@ import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 
 export class RegisterPage {
   createSuccess = false;
-  registerCredentials = {email: '', password: ''}
+  registerCredentials = {username: '', email: '',phone: '', password: '', confirmPassword: ''}
 
   constructor(public navCtrl: NavController,private alertCtrl: AlertController, private auth: AuthServiceProvider, public navParams: NavParams) {
+  }
+
+  backToLogin(){
+    this.navCtrl.push('LoginPage');
   }
 
   public register(){

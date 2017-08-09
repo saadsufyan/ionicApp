@@ -9,13 +9,23 @@ import { HomePage } from '../pages/home/home';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { ForgetPasswordPage } from '../pages/forget-password/forget-password';
+import { MainPage } from '../pages/main/main';
+import { LanguagePage } from '../pages/language/language';
+import { OrdersPage } from '../pages/orders/orders';
+import { CartPage } from '../pages/cart/cart';
+import { ProfilePage } from '../pages/profile/profile';
+import { SettingsPage } from '../pages/settings/settings';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    LoginPage
- 
+    LanguagePage
+
+   
+
+
+   
   ],
   imports: [
     BrowserModule,
@@ -24,9 +34,11 @@ import { RegisterPage } from '../pages/register/register';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    LoginPage
+    LanguagePage
 
+ 
+
+  
   ],
   providers: [
     StatusBar,

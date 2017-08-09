@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+h1,h2,h3,h4,h5,h6, p, a, button{
+    font-family: 'Lato', sans-serif !important;
+}
+.white{ color: white !important}
+h5{font-weight: 400 !important;}
+
+.bullet-buttons{
+    padding-bottom: 29%;
+}
+.bullet-buttons li{
+    background: #a4a4a4 !important;
+    border: none !important;
+}
+.bullet-buttons li.active{
+    background: #154f69 !important;
+}
+.button-box {
+    position: absolute;
+    padding: 30px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+.btn-fishtime {
+    font-size: 16px !important;
+    background: #ffffff !important;
+    color: #3e99c6 !important;
+    border: solid 1px #ffffff !important;
+    border-radius: 24px !important;
+}
+.btn-fishtime-o {
+    font-size: 16px !important;
+    background: none !important;
+    color: #ffffff !important;
+    border: solid 1px #ffffff !important;
+    padding: 2% 14% !important;
+    border-radius: 24px !important;
+}
+.btn-fishtime-o.lg{
+    padding: 4% 28% !important;
+}
+.btn-fishtime.lg{
+    padding: 4% 32% !important;
+}
+
+.swiper-container-horizontal > .swiper-pagination
+{
+    bottom          : 20%; //Change accordingly
+    z-index         : 99 !important;
+}
+.button-md {
+    text-transform: none
+}
+.bar-button-default-md{
+    color: white
+}
+.bar-button-default-ios {
+    color: white
+}
+.swiper-pagination-bullet-active {
+    background: #3C93BE;
+    opacity: 1;
+}

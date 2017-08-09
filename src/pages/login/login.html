@@ -1,54 +1,62 @@
-  <ion-header style="background-image: url('assets/bg.png')">
-    <ion-navbar>
+<!--><ion-header class="header-img" style="background-image: url('assets/bg_menu.png'); background-repeat: round">
+    <ion-navbar end>
       
       <ion-buttons end>
-    <button (click)="searchToggle()">
-    <ion-icon name="search">Continue shopping</ion-icon>
-    </button>
+      <ion-label>continue shopping<ion-icon ios="ios-arrow-forward-outline" md="md-arrow-forward" style="font-size:30px"></ion-icon></ion-label>
     </ion-buttons>
     </ion-navbar>
-  </ion-header>
+  </ion-header><-->
+
+<ion-header class="login-header">
+  <div style="padding-right: 10px">  
+    <ion-buttons end >
+      <h5 (click)="goToMainPage()">continue shopping &nbsp;<ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward"  style="font-size:30px; vertical-align:middle"></ion-icon></h5>
+    </ion-buttons>
+  </div>
+</ion-header>
 
 
-<ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round  " >
-  <ion-row class="logo-row">
-    <ion-col></ion-col>
-    <ion-col width-67>
-      <img src="assets/logo_white.png">
-    </ion-col>
-    <ion-col></ion-col>
-  </ion-row>
+<ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round">
+  <div class="logo-row">
+      <!--><ion-buttons end>
+          <ion-label>continue shopping<ion-icon ios="ios-arrow-forward-outline" md="md-arrow-forward" style="font-size:30px"></ion-icon></ion-label>
+      </ion-buttons><-->
+    <!--><div class="image-center"><-->
+      <ion-col class="image-center" width-67>
+        <img src="assets/logo_white.png" style="padding-left:20px">
+      </ion-col>
+    <!--></div><-->
+
+  </div>
   
   <div class="login-box">
     <form (ngSubmit)="login()" #registerForm="ngForm">
-      <ion-row>
         <ion-col>
           <ion-list inset>
             
-            <ion-item>
-              <ion-input  type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email"  required></ion-input>
-            </ion-item>
-            
-            <ion-item>
-              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
-            </ion-item>
-            
-          </ion-list>
+              <ion-input class="input-user" type="text" placeholder="username" name="username" [(ngModel)]="loginCredentials.username">username</ion-input>
+
+              <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password">Password</ion-input>
+
+              <form>
+              <button style="padding-left:170px" ion-button end color="light" clear (click)="clickForgetPassword()">Forget Password ?</button>
+              </form>
+            </ion-list>
         </ion-col>
-      </ion-row>
-      
+
       <ion-row>
         <ion-col class="signup-col">
           <div class="btn" text-center>
-          <button ion-button col-8 col-sm class="submit-btn" round type="submit" [disabled]="!registerForm.form.valid">Log In</button>
-          <br>
-          <button ion-button col-8 col-sm class="register-btn"   round outline (click)="createAccount()">Sign Up</button>
-
+            <button ion-button col-8 col-sm class="submit-btn" round type="submit" color="light" [disabled]="!registerForm.form.valid">Log In</button>
           </div>
-
         </ion-col>
       </ion-row>
-      
     </form>
+
+    <div class="btn" text-center>
+      <button ion-button col-8 col-sm class="register-btn" color="light"   round outline (click)="createAccount()">Sign Up</button>
+    </div>
+
+    
   </div>
 </ion-content>

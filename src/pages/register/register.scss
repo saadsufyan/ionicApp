@@ -1,3 +1,77 @@
 page-register {
 
 }
+.input-email, .input-phone , .input-password, .input-confirmPassword{
+    font-family: 'Lato', sans-serif !important;
+}
+
+.image-center{
+
+    max-width: 300px;
+    margin: auto;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    
+}
+
+.back-icon{
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.input-email{
+    background:transparent; 
+    border:none;
+    color: mintcream;
+}
+
+.input-phone{
+    background:transparent; 
+    border:none;
+    color: mintcream;
+}
+
+.input-password{
+    background:transparent; 
+    border:none;
+    color: mintcream;
+}
+
+.input-confirmPassword{
+
+    background:transparent; 
+    border:none;
+    color: mintcream;
+}
+
+.background-img{
+    background-image: url('assets/bg.png'); 
+
+}
+
+.back-arrow{
+    font-size: 30px;
+}
+
+
+.input-email {
+    background: url('../assets/icon_email.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px !important;
+    background-position: 5px 25px !important;
+}
+
+.input-phone{
+    background: url('../assets/icon_call.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px !important;
+    background-position: 5px 18px !important;
+}
+
+.input-confirmpassword{
+    background: url('../assets/icon_password.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px !important;
+    background-position: 5px 15px !important;
+}

@@ -1,0 +1,33 @@
+<ion-header class="main-header">
+  <div>
+    <ion-col class="image-center">
+      <img src="assets/logo_white.png">
+    </ion-col>
+  </div>
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-toolbar color="primary">
+      <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+    </ion-toolbar>
+  </div>
+  <div>    
+    <ion-grid color="dark">
+      <ion-row>
+        <ion-col col-6>Stock available: </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+
+<div class="bar bar-footer bar-balanced" color="dark">
+    <ion-tabs>
+    <ion-tab tabIcon="water" tabTitle="Water" [root]="tab1"></ion-tab>
+    <ion-tab tabIcon="leaf" tabTitle="Life" [root]="tab2"></ion-tab>
+    <ion-tab tabIcon="flame" tabTitle="Fire" [root]="tab3"></ion-tab>
+    <ion-tab tabIcon="magnet" tabTitle="Force" [root]="tab4"></ion-tab>
+  </ion-tabs>
+</div>
