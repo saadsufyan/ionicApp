@@ -4,22 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class User{
-  username: string;
-  email: string;
-  phone: string;
-  password: string;
-  confirmPassword: string;
 
-  constructor(username: string, email: string, phone: string, password: string, confirmPassword: string ){
-    this.username = username;
-    this.email = email;
-    this.phone = phone;
-    this.password = password;
-    this.confirmPassword = confirmPassword;
-
-  }
-}
 
 export class fish{
   fish_name: string;
@@ -35,6 +20,23 @@ export class fish{
   }
 
 
+}
+
+export class User{
+  username: string;
+  email: string;
+  phone: string;
+  password: string;
+  confirmPassword: string;
+
+  constructor(username: string, email: string, phone: string, password: string, confirmPassword: string ){
+    this.username = username;
+    this.email = email;
+    this.phone = phone;
+    this.password = password;
+    this.confirmPassword = confirmPassword;
+
+  }
 }
 
 export class AuthServiceProvider {
@@ -58,6 +60,7 @@ export class AuthServiceProvider {
   }
 
   public register(credentials){
+    console.log(credentials)
     if(credentials.username === null ||credentials.email === null || credentials.phone === null || credentials.password === null || credentials.confirmPassword === null){
       return Observable.throw("Please insert credentials");
     } else {

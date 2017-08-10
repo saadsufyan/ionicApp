@@ -10,7 +10,7 @@
 <ion-header class="login-header">
   <div style="padding-right: 10px">  
     <ion-buttons end >
-      <h5 (click)="goToMainPage()">continue shopping &nbsp;<ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward"  style="font-size:30px; vertical-align:middle"></ion-icon></h5>
+      <h5 >continue shopping &nbsp;<ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward"  style="font-size:30px; vertical-align:middle" (click)="goToMainPage()"></ion-icon></h5>
     </ion-buttons>
   </div>
 </ion-header>
@@ -34,9 +34,9 @@
         <ion-col>
           <ion-list inset>
             
-              <ion-input class="input-user" type="text" placeholder="username" name="username" [(ngModel)]="loginCredentials.username">username</ion-input>
+              <ion-input class="input-user" type="text" placeholder="username" name="username" [(ngModel)]="loginCredentials.username" required>username</ion-input>
 
-              <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password">Password</ion-input>
+              <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password" required>Password</ion-input>
 
               <form>
               <button style="padding-left:170px" ion-button end color="light" clear (click)="clickForgetPassword()">Forget Password ?</button>

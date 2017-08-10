@@ -11,7 +11,7 @@ import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 export class ForgetPasswordPage {
 
   createSuccess = false;
-  submitCredentials = {email: ''}
+  submitCredentials = {email: ''};
 
   constructor(public navCtrl: NavController,private alertCtrl: AlertController, private auth: AuthServiceProvider, public navParams: NavParams) {
   }
@@ -20,10 +20,10 @@ export class ForgetPasswordPage {
     this.navCtrl.push('LoginPage');
   }
 
-  public forgetPass(){
-    this.auth.register(this.submitCredentials).subscribe(success =>{
+  public forgetPassword(){
+    this.auth.forgetPass(this.submitCredentials).subscribe(success =>{
       if(success){
-        this.createSuccess = true;
+        //this.createSuccess = true;
         this.showPopup("success", "Email Sent");
       } else{
         this.showPopup("Error","Email address is not valid");

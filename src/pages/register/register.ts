@@ -19,7 +19,7 @@ export class RegisterPage {
     this.navCtrl.push('LoginPage');
   }
 
-  public register(){
+  public singUp(){
     this.auth.register(this.registerCredentials).subscribe(success =>{
      if(success){
       this.createSuccess = true;

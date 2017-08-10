@@ -15,7 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CartPage {
 
+  public databinding : any
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.databinding = "I am here"
   }
 
   ionViewDidLoad() {

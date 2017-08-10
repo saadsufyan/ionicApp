@@ -5,24 +5,24 @@
 
 <ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round">
     <ion-row class="logo-row">
-    <!--><div class="image-center"><-->
+
       <ion-col class=image-center width-67>
         <img src="assets/logo_white.png">
       </ion-col>
-    <!--></div><-->
+ 
 
   </ion-row>  
   <div class="login-box">
-    <form (ngSubmit)="register()" #registerForm= "ngForm">
+    <form (ngSubmit)="singUp()" #singupForm= "ngForm">
       <ion-row>
         <ion-col>
           <ion-list insert>
 
-            <ion-input class="input-user" type="text" placeholder="Username" name="username" [(ngModel)]="registerCredentials.username">username</ion-input>
-            <ion-input class="input-email" type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email">email</ion-input>
-            <ion-input class="input-phone" type="text" placeholder="Phone Number*" name="phone" [(ngModel)]="registerCredentials.phone">phone</ion-input>
-            <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password">password</ion-input>
-            <ion-input class="input-confirmpassword" type="password" placeholder="confirm Password" name="confirmPassword" [(ngModel)]="registerCredentials.confirmPassword">confirmPassword</ion-input>
+            <ion-input class="input-user" type="text" placeholder="Username" name="username" [(ngModel)]="registerCredentials.username"  required></ion-input>
+            <ion-input class="input-email" type="email" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email"  required></ion-input>
+            <ion-input class="input-phone" type="number" placeholder="Phone Number*" name="phone" [(ngModel)]="registerCredentials.phone"  required></ion-input>
+            <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password"  required></ion-input>
+            <ion-input class="input-confirmpassword" type="password" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="registerCredentials.confirmPassword"  required></ion-input>
 
           </ion-list>
         </ion-col>
@@ -31,7 +31,7 @@
       <ion-row>
         <ion-col class="signup-col">
           <div class="btn" text-center>
-            <button ion-button col-8 col-sm class="register-btn"  round outline color="light"  [disabled]="!registerForm.form.valid">Sign Up</button>
+            <button ion-button col-8 col-sm class="register-btn"  round outline color="light"  [disabled]="!singupForm.form.valid">Sign Up</button>
           </div>
         </ion-col>
       </ion-row>

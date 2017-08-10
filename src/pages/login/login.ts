@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage,AlertController,LoadingController,Loading, NavController, NavParams } from 'ionic-angular';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 import { MainPage } from '../main/main';
-import { HometabPage } from '../hometab/hometab';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -15,6 +15,7 @@ export class LoginPage {
   loading: Loading;
   loginCredentials = {username: '', password: ''};
 
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private auth: AuthServiceProvider, private alertCtrl: AlertController, private loadingCtrl: LoadingController) {}
 
   public createAccount(){
@@ -23,7 +24,7 @@ export class LoginPage {
   }
 
   public goToMainPage(){
-    this.navCtrl.push("HometabPage");
+    this.navCtrl.push("HomePage");
   }
 
   public clickForgetPassword(){
@@ -37,7 +38,7 @@ export class LoginPage {
         this.navCtrl.setRoot('HometabPage');
         console.log("login_scene on hai");
       } else {
-        this.showError("Access Denied");
+        this.showError("Please Enter Username & Password");
         console.log("login_why im here ?");
       }
     },
@@ -45,6 +46,7 @@ export class LoginPage {
       this.showError(error);
     });
   }
+
 
   showLoading(){
     this.loading = this.loadingCtrl.create({
