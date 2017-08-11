@@ -10,21 +10,21 @@
 <ion-header class="login-header">
   <div style="padding-right: 10px">  
     <ion-buttons end >
-      <h5 >continue shopping &nbsp;<ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward"  style="font-size:30px; vertical-align:middle" (click)="goToMainPage()"></ion-icon></h5>
+      <h5 style="font: caption; color: mintcream;">continue shopping &nbsp;<ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward"  style="font-size:30px; vertical-align:middle; color:mintcream"  (click)="goToMainPage()"></ion-icon></h5>
     </ion-buttons>
   </div>
 </ion-header>
 
 
 <ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round">
-  <div class="logo-row">
+  <div class="logo-row" >
       <!--><ion-buttons end>
           <ion-label>continue shopping<ion-icon ios="ios-arrow-forward-outline" md="md-arrow-forward" style="font-size:30px"></ion-icon></ion-label>
       </ion-buttons><-->
     <!--><div class="image-center"><-->
-      <ion-col class="image-center" width-67>
+
         <img src="assets/logo_white.png" style="padding-left:20px">
-      </ion-col>
+
     <!--></div><-->
 
   </div>
@@ -34,27 +34,30 @@
         <ion-col>
           <ion-list inset>
             
-              <ion-input class="input-user" type="text" placeholder="username" name="username" [(ngModel)]="loginCredentials.username" required>username</ion-input>
+              <ion-input class="input-user input-login-signup" type="text" placeholder="Username" name="username" [(ngModel)]="loginCredentials.username" required>username</ion-input>
 
-              <ion-input class="input-password" type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password" required>Password</ion-input>
+              <ion-input class="input-password input-login-signup" type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password" required>Password</ion-input>
 
               <form>
-              <button style="padding-left:170px" ion-button end color="light" clear (click)="clickForgetPassword()">Forget Password ?</button>
+              <h6 clear (click)="clickForgetPassword()" style="float: right; color: white;">Forget Password ?</h6>
               </form>
             </ion-list>
         </ion-col>
 
-      <ion-row>
-        <ion-col class="signup-col">
-          <div class="btn" text-center>
-            <button ion-button col-8 col-sm class="submit-btn" round type="submit" color="light" [disabled]="!registerForm.form.valid">Log In</button>
+
+          <div class="btn-login" text-center>
+            <button  col-7 col-sm class="login-btn btn-round" type="submit" [disabled]="!registerForm.form.valid">Log In</button>
+            
           </div>
-        </ion-col>
-      </ion-row>
+
+ 
     </form>
 
-    <div class="btn" text-center>
-      <button ion-button col-8 col-sm class="register-btn" color="light"   round outline (click)="createAccount()">Sign Up</button>
+    <div class="btn-signup" text-center>
+       
+<br>
+            <button col-7 col-sm class="signup-btn btn-round"  (click)="createAccount()">Sign Up </button> 
+      
     </div>
 
     

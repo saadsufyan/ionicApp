@@ -41,22 +41,55 @@ font-family: 'Lato', sans-serif !important;
     color: blue;
 }
 
-.text-input-ios {
-    margin: 11px 8px 11px 0;
-    padding: 13px 37px;
-    border-bottom: solid 1px white;
+.input-login-signup {
+    margin: 11px 8px 11px 0 !important;
+    padding: 8px 35px;
+    border-bottom: groove 1px white !important;
+    color: white;
+}
+
+.input-login-signup:focus, .focus-outline :focus{
+    outline: none !important;
 }
 
 .input-user {
     background: url('../assets/icon_user.png');
     background-repeat: no-repeat;
     background-size: 20px;
-    background-position: 5px 20px;
+    background-position: 5px 15px;
+    
 }
 .input-password {
     background: url('../assets/icon_password.png') !important;
     background-repeat: no-repeat !important;
-        background-size: 20px !important;
-    background-position: 5px 15px !important;
+    background-size: 20px !important;
+    background-position: 5px 10px !important;
 
+}
+
+.btn-round {
+    border-radius: 50px;
+    background: none;
+    font-size: 16px;
+   font-family: 'Lato', sans-serif !important;
+        padding: 13px 0px;
+}
+
+.btn-round:focus{
+    background: white !important;
+    background-color: white !important;
+    color: blue;
+}
+.login-btn {
+    background: white;
+    color: blue;
+}
+
+.signup-btn{
+    border: solid 1px #ffffff;
+    color: white;
+}
+
+.logo-row{
+    text-align: center;
 }

@@ -10,11 +10,20 @@
 		<div class="item">
 
 			<div class="button-box" style="padding: 40px 15px !important;">
+
+				<div class="col-xs-12">
       
-      <ion-label class="white heading-light" style="color: white !important; padding-right:20px;">Select Language</ion-label>
-			<button class="btn-fishtime-o disable-hover button button-md button-default button-default-md" ion-button="" style="font-size: 14px !important;padding-top: 15px !important;padding-bottom: 15px !important;" (click)="goToLogin()"><span class="button-inner">العربي</span><div class="button-effect"></div></button>
+      <ion-label class="white heading-light" style="color: white !important; padding-right:20px; font: caption;">Select Language</ion-label>
+			</div>
+				<div class="col-xs-6">
+				<button class="signup-btn btn-round arabi-btn">العربي</button>
+			<!-- <button class="login-btn btn-round" ion-button="" style="font-size: 14px !important;padding-top: 15px !important;padding-bottom: 15px !important;" (click)="goToLogin()"><span class="button-inner">             العربي</span><div class="button-effect"></div></button> -->
 			&nbsp;&nbsp;
-			<button class="btn-fishtime-o disable-hover button button-md button-default button-default-md" ion-button="" style="font-size: 14px !important;padding-top: 15px !important;padding-bottom: 15px !important;"><span class="button-inner" (click)="goToLogin()">English</span><div class="button-effect"></div></button>
+				</div>
+				<div class="col-xs-6">
+			<button class="signup-btn btn-round arabi-btn" (click)="goToLogin()">English</button>
+			<!-- <button class="btn-fishtime-o disable-hover button button-md button-default button-default-md" ion-button="" style="font-size: 14px !important;padding-top: 15px !important;padding-bottom: 15px !important;"><span class="button-inner" (click)="goToLogin()">English</span><div class="button-effect"></div></button> -->
+				</div>
 		</div>
 		<img src="assets/splash_02.png" style="width: 100%;height: 101vh; background-repeat: round">
 		</div>

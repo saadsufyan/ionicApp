@@ -12,11 +12,22 @@ page-hometab {
     background-repeat: round;
 }
 
+
+.tabs-md .tabbar {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top: 0.55px solid rgba(0, 0, 0, 0.3);
+    background-image: url('../assets/bg_menu.png');
+    background-repeat: round;
+}
+
 .has-icon .tab-button-icon, .has-title .tab-button-text {
     display: block;
     color: aliceblue;
 }
 
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
-    color: #424242;
+    color: #f4f4f4;
 }
