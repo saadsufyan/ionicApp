@@ -16,11 +16,17 @@ import { OrdersPage } from '../pages/orders/orders';
 import { CartPage } from '../pages/cart/cart';
 import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
+import { Cart1 } from '../pages/cart1/cart1';
+import { Details } from '../pages/details/details';
 
 @NgModule({
   declarations: [
     MyApp,
-    LanguagePage
+    LanguagePage,
+ 
+    Cart1,
+    Details
+    
 
    
 
@@ -34,7 +40,9 @@ import { SettingsPage } from '../pages/settings/settings';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    LanguagePage
+    LanguagePage,
+    Cart1,
+    Details
 
  
 

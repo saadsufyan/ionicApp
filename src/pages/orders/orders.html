@@ -2,10 +2,177 @@
 <ion-header class="header-home">
 
 
-
+ <ion-title style="text-align:center">Orders</ion-title>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+<div >
+  <ion-segment [(ngModel)]="orders">
+    <ion-segment-button value="ConfirmedOrders">
+     Confirmed Orders
+    </ion-segment-button>
+    <ion-segment-button value="PendingOrders">
+     Pending Orders
+    </ion-segment-button>
+  </ion-segment>
+</div>
 
+<div [ngSwitch]="orders">
+  <ion-list *ngSwitchCase="'ConfirmedOrders'">
+      <div class="col-xs-12">
+          <div class="col-xs-3 fish-img">
+              <br> <br>
+              <img src="assets/fish_02.png">
+          </div>
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+              <h4>Snapper</h4>
+              <h4 class="fish-price">SAR 440</h4>
+            <h6>Order Date: </h6>
+              <h6>Delivery Date: </h6>
+                    </div>
+            <div class="col-xs-3 tick-icon"  style="float:right">
+                <img src="assets/tick.png">
+            </div>
+
+            <div class="col-xs-6 order-delivery-date">
+              <h6>15/8/2017 </h6>
+              <h6>5:30pm 25/8/2017 </h6>
+            </div>
+                </div>
+      </div>
+      </div>
+
+
+            <div class="col-xs-12">
+          <div class="col-xs-3  fish-img">
+              <br> <br>
+              <img src="assets/fish_02.png">
+          </div>
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+              <h4>Snapper</h4>
+              <h4 class="fish-price">SAR 440</h4>
+            <h6>Order Date: </h6>
+              <h6>Delivery Date: </h6>
+                    </div>
+            <div class="col-xs-3 tick-icon" style="float:right">
+                <img src="assets/tick.png">
+            </div>
+            <div class="col-xs-6 order-delivery-date">
+              <h6>15/8/2017 </h6>
+              <h6>5:30pm 25/8/2017 </h6>
+            </div>
+                </div>
+      </div>
+      </div>
+
+
+            <div class="col-xs-12">
+          <div class="col-xs-3  fish-img">
+              <br> <br>
+              <img src="assets/fish_02.png">
+          </div>
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+              <h4>Snapper</h4>
+              <h4 class="fish-price">SAR 440</h4>
+            <h6>Order Date: </h6>
+              <h6>Delivery Date: </h6>
+                    </div>
+            <div class="col-xs-3 tick-icon"  style="float:right">
+                <img src="assets/tick.png">
+            </div>
+            <div class="col-xs-6 order-delivery-date">
+              <h6>15/8/2017 </h6>
+              <h6>5:30pm 25/8/2017 </h6>
+            </div>
+                </div>
+      </div>
+      </div>
+
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'PendingOrders'">
+       <div class="col-xs-12">
+          <div class="col-xs-3 fish-img">
+              <br> <br>
+              <img src="assets/fish_02.png">
+          </div>
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+              <h4>Snapper</h4>
+              <h4 class="fish-price">SAR 440</h4>
+            <h6>Order Date: </h6>
+              <h6>Delivery Date: </h6>
+                    </div>
+            <div class="col-xs-3 tick-icon">
+                <img src="assets/pending.png">
+                
+            </div><h6 style="padding: 32px 0px 0px 0px; color: chocolate;">Pending</h6>
+            <div class="col-xs-6 order-delivery-date">
+              <h6>15/8/2017 </h6>
+              <h6>5:30pm 25/8/2017 </h6>
+            </div>
+                </div>
+      </div>
+      </div>
+
+
+            <div class="col-xs-12">
+          <div class="col-xs-3  fish-img">
+              <br> <br>
+              <img src="assets/fish_02.png">
+          </div>
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+              <h4>Snapper</h4>
+              <h4 class="fish-price">SAR 440</h4>
+            <h6>Order Date: </h6>
+              <h6>Delivery Date: </h6>
+                    </div>
+            <div class="col-xs-3 tick-icon" >
+                <img src="assets/pending.png">
+            </div><h6 style="padding: 32px 0px 0px 0px; color: chocolate;">Pending</h6>
+            <div class="col-xs-6 order-delivery-date">
+              <h6>15/8/2017 </h6>
+              <h6>5:30pm 25/8/2017 </h6>
+            </div>
+                </div>
+      </div>
+      </div>
+
+
+            <div class="col-xs-12">
+          <div class="col-xs-3  fish-img">
+              <br> <br>
+              <img src="assets/fish_02.png">
+          </div>
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                    <div class="col-xs-6">
+              <h4>Snapper</h4>
+              <h4 class="fish-price">SAR 440</h4>
+            <h6>Order Date: </h6>
+              <h6>Delivery Date: </h6>
+                    </div>
+            <div class="col-xs-3 tick-icon">
+                <img src="assets/pending.png">
+            </div><h6 style="padding: 32px 0px 0px 0px; color: chocolate;">Pending</h6>
+            <div class="col-xs-6 order-delivery-date">
+              <h6>15/8/2017 </h6>
+              <h6>5:30pm 25/8/2017 </h6>
+            </div>
+                </div>
+      </div>
+      </div>
+  
+  </ion-list>
+</div>
 </ion-content>
