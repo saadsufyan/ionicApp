@@ -86,3 +86,10 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+$segment-button-ios-background-color-activated: #428FBC;
+$segment-button-md-text-color-activated: #428FBC;
+
+$segment-button-md-border-color-activated: #428FBC;
+$segment-button-md-border-color-disabled: grey;
+$tab-button-md-inactive-color: grey;

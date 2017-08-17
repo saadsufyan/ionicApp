@@ -10,10 +10,13 @@
 <div >
   <ion-segment [(ngModel)]="orders">
     <ion-segment-button value="ConfirmedOrders">
-     Confirmed Orders
+     Confirmed Orders 
+     <ion-icon class="tickmark-icon" name="checkmark-circle"></ion-icon>
+     <!-- <img src="assets/black_tick.svg" class="segment-icons"> -->
     </ion-segment-button>
     <ion-segment-button value="PendingOrders">
      Pending Orders
+     <ion-icon class="tickmark-icon" name="more"></ion-icon>
     </ion-segment-button>
   </ion-segment>
 </div>

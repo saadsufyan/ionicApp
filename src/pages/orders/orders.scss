@@ -15,3 +15,20 @@ page-orders {
     //border: groove;
     //padding: 10px 0px 10px 0;
 }
+
+
+.segment-ios .segment-button:first-of-type{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    
+}
+
+.segment-ios .segment-button:last-of-type{
+        border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.tickmark-icon{
+    float: right;
+    padding: 0px 5px 0px 0px;
+}

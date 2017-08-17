@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Details } from '../details/details';
+import { CartPage } from '../cart/cart';
 @IonicPage()
 @Component({
   selector: 'page-home',
@@ -16,6 +17,9 @@ export class HomePage {
   }
   goToDetails(){
     this.navCtrl.push(Details);
+  }
+    goToCart(){
+    this.navCtrl.push(CartPage);
   }
 
 }

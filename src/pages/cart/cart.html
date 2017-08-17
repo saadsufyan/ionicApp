@@ -6,6 +6,82 @@
 </ion-header>
 
 
-<ion-content padding>
-hello cart
+<ion-content>
+    <div class="col-xs-12 cart-product">
+
+        <div class="col-xs-3 cart-img-box">
+            <img src="assets/fish_02.png" class="cart-img">
+        </div>
+        
+        <div class="col-xs-9 cart-product-detail" >
+            <div class="col-xs-12">
+                <h4>Snapper</h4>
+                <img src="assets/close.png" class="img-close">
+            </div>
+            <div class="col-xs-8 fish-count">
+                    <img src="assets/minus.png" class="img-count" (click)="clickCounterSub()">
+                     &nbsp; {{fishcount}} &nbsp;
+                     <img src="assets/add.png" class="img-count" (click)="clickCounterAdd()">
+                       &nbsp; KG 
+            </div>
+
+                <div class="col-xs-4 fishprice-box" style="padding:0px">
+                    <h4>SAR 440</h4>
+                    
+                </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 cart-product">
+
+        <div class="col-xs-3 cart-img-box">
+            <img src="assets/fish_02.png" class="cart-img">
+        </div>
+        
+        <div class="col-xs-9 cart-product-detail" >
+            <div class="col-xs-12">
+                <h4>Snapper</h4>
+                <img src="assets/close.png" class="img-close">
+            </div>
+            <div class="col-xs-8 fish-count">
+                    <img src="assets/minus.png" class="img-count" (click)="clickCounterSub()">
+                     &nbsp; {{fishcount}} &nbsp;
+                     <img src="assets/add.png" class="img-count" (click)="clickCounterAdd()">
+                       &nbsp; KG 
+            </div>
+
+                <div class="col-xs-4 fishprice-box" style="padding:0px">
+                    <h4>SAR 440</h4>
+                    
+                </div>
+        </div>
+    </div>
+
+
+    <div class="col-xs-12">
+        <div class="col-xs-12"><h4 class="order-color"><b>Order Summary</b></h4><span class="underline"></span><br></div>
+           
+            <div class="col-xs-8">
+                
+                <h5>Order Subtotal</h5>
+                <h5>Delivery Fee</h5>
+            </div>
+            <div class="col-xs-4 finalprice-box">
+                              
+                <h5>SAR 440</h5>
+                <h5>Free</h5>
+            </div>
+        <div class="col-xs-12 grandtotal-box">   
+			<h4 class="white pull-left"><b>Grand Total</b></h4>
+			<h4 class="white pull-right"><b>SAR 440</b></h4>
+  
+        </div>
+        <div class="col-xs-12 proceed-btn-box">
+            <br><br>
+            <button col-7 col-sm class="proceed-btn btn-round"  (click)="goToCheckout()">Proceed</button> 
+
+        </div>
+        
+    </div>
+
 </ion-content>

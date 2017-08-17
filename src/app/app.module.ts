@@ -18,14 +18,19 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 import { Cart1 } from '../pages/cart1/cart1';
 import { Details } from '../pages/details/details';
+import {  TermsAndConditionsPage } from '../pages/terms-and-conditions/terms-and-conditions';
+import { FaqPage } from '../pages/faq/faq';
+
 
 @NgModule({
   declarations: [
     MyApp,
     LanguagePage,
- 
+    CartPage,
     Cart1,
-    Details
+    Details,
+    TermsAndConditionsPage,
+    FaqPage
     
 
    
@@ -41,8 +46,11 @@ import { Details } from '../pages/details/details';
   entryComponents: [
     MyApp,
     LanguagePage,
+    CartPage,
     Cart1,
-    Details
+    Details,
+    TermsAndConditionsPage,
+    FaqPage
 
  
 

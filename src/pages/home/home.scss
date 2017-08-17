@@ -6,17 +6,27 @@ page-home {
 }
 .bg-white{
     background-color: white;
+    padding: 0px;
 }
 .box {
     padding: 3px;
 }
-.header-home{
+.header-home1{
     background-image: url('../assets/bg_menu.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 50px;
     text-align: center;
 }
+
+.header-home{
+    background-image: url('../assets/bg_menu.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50px;
+    //text-align: center;
+}
+
 
 .header-tabs{
     //-webkit-box-pack: center;
@@ -67,7 +77,7 @@ page-home {
     //background-color: #f8fffc;
 }
 .box-left{
-    background-color: rgba(255, 255, 255, 0.7);
+    background: rgb(249, 246, 246) !important;
     border: white;
     //width: 48%;
 
@@ -163,4 +173,18 @@ page-home {
 
 .textinmiddle{
     text-align: center;
+    font-size: 18px;
+}
+
+.box-inner{
+    padding: 0px !important;
+}
+
+.fish-weight{
+    font: icon;
+    font-size: 11px;
+}
+
+.fish-availability{
+    font-size: 13px;
 }

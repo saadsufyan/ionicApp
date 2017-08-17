@@ -11,3 +11,78 @@ page-cart {
     pointer-events: auto;
     padding-top: 17px;
 }
+
+
+.cart-img-box {
+    height: 80px;
+    border: solid 1px #d2d2d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-count {
+    width: 20px;
+}
+
+.img-close {
+    width: 15px;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.fishprice-cart{
+    font-size: 20px !important;
+
+}
+
+.fishprice-box {
+    text-align: right;
+    padding: 0px;
+        color: #3e99c6;
+    
+}
+.cart-product {
+    padding: 14px 12px;
+}
+
+.fish-count{
+        padding: 10px 0 0 10px;
+        color: #3e99c6;
+}
+
+.finalprice-box{
+    float: right;
+}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    background: #3e99c6;
+    display: block;
+}
+
+.order-color{
+    color: #3e99c6;
+}
+
+.ordersummary-box{
+    //border-bottom: groove 1px;
+    //border-bottom-color: #117fe0;
+    //color: #117fe0;
+}
+
+.grandtotal-box{
+    background-color: black;
+}
+
+.proceed-btn{
+    border: solid 1px #3e99c6;
+    color: #3e99c6;
+    
+}
+
+.proceed-btn-box{
+    text-align: center;
+}

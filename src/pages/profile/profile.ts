@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 import { Cart1 } from '../cart1/cart1';
 
 
@@ -15,7 +15,7 @@ export class ProfilePage {
   phoneNumber: string;
   address: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -29,5 +29,18 @@ export class ProfilePage {
   }
   goToCartPage(){
     this.navCtrl.push(Cart1);
+  }
+
+
+  showPopup(text){
+
+
+    let alert = this.alertCtrl.create({
+      title: 'You are Logged out',
+      subTitle: text,
+      buttons: ['OK']
+    });
+    alert.present(prompt);
+
   }
 }

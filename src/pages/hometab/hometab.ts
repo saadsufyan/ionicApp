@@ -6,12 +6,6 @@ import { CartPage } from '../cart/cart';
 import { ProfilePage } from '../profile/profile';
 import { SettingsPage } from '../settings/settings';
 
-/**
- * Generated class for the HometabPage tabs.
- *
- * See https://angular.io/docs/ts/latest/guide/dependency-injection.html for
- * more info on providers and Angular DI.
- */
 
 @IonicPage()
 @Component({

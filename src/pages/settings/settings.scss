@@ -1,3 +1,38 @@
 page-settings {
 
 }
+
+.arrow-icon{
+    float: right;
+}
+
+.font-text1{
+    font-size: 17px;
+}
+
+.feedback-btn{
+
+    border-radius: 50px;
+    background: none;
+    font-size: 20px;
+    font: initial;
+    padding: 13px 0px;
+
+    border: solid 1px dodgerblue;
+    color: dodgerblue;
+
+}
+
+.ul {
+  padding: 0px;
+ 
+  &.rating li {
+    padding: 5px 10px !important;
+    background: none;
+    color: #ffb400;
+ 
+    ion-icon {
+      font-size: 30px;
+    }
+  }
+}

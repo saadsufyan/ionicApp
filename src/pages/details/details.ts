@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController,AlertController, NavParams } from 'ionic-angular';
+import { CartPage } from '../cart/cart';
 
 @Component({
   selector: 'page-details',
@@ -17,7 +18,12 @@ export class Details {
     this.fishcount = this.fishcount + 1;
   }
   clickCounterSub(){
-     this.fishcount = this.fishcount - 1;
+    if(this.fishcount>0){
+      this.fishcount = this.fishcount - 1;
+    }
+  }
+  goToCart(){
+    this.navCtrl.push(CartPage);
   }
 
 }

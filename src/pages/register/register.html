@@ -3,19 +3,19 @@
     <ion-icon class="back-icon" ios="ios-arrow-back" md="ios-arrow-back" (click)="backToLogin()" style="color:mintcream"></ion-icon>
 </ion-header>
 
-<ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round">
+<ion-content class="login-content" padding style="background-image: url('assets/bg.png'); background-repeat: round" >
     <ion-row class="logo-row">
 
-      <ion-col class=image-center width-67>
+      <ion-col class=image-center>
         <img src="assets/logo_white.png">
       </ion-col>
  
 
   </ion-row>  
-  <div class="login-box">
+  <div class="login-box" style="    padding: 0px 15px 0px 15px;">
     <form (ngSubmit)="singUp()" #singupForm= "ngForm">
       <ion-row>
-        <ion-col>
+        <ion-col class="col-xs-12">
           <ion-list insert>
 
             <ion-input class="input-user input-login-signup" type="text" placeholder="Username" name="username" [(ngModel)]="registerCredentials.username"  required></ion-input>

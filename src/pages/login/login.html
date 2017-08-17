@@ -10,7 +10,7 @@
 <ion-header class="login-header">
   <div style="padding-right: 10px">  
     <ion-buttons end >
-      <h5 style="font: caption; color: mintcream;">continue shopping &nbsp;<ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward"  style="font-size:30px; vertical-align:middle; color:mintcream"  (click)="goToMainPage()"></ion-icon></h5>
+      <h5 class="textShopping" >Continue Shopping &nbsp;<ion-icon class="shopping-icon" ios="ios-arrow-forward-outline" md="ios-arrow-forward" (click)="goToMainPage()"></ion-icon></h5>
     </ion-buttons>
   </div>
 </ion-header>
@@ -23,7 +23,7 @@
       </ion-buttons><-->
     <!--><div class="image-center"><-->
 
-        <img src="assets/logo_white.png" style="padding-left:20px">
+        <img src="assets/logo_white.png">
 
     <!--></div><-->
 
@@ -31,13 +31,13 @@
   
   <div class="login-box">
     <form (ngSubmit)="login()" #registerForm="ngForm">
-        <ion-col>
+        <ion-col class="col-xs-12">
           <ion-list inset>
             
               <ion-input class="input-user input-login-signup" type="text" placeholder="Username" name="username" [(ngModel)]="loginCredentials.username" required>username</ion-input>
 
               <ion-input class="input-password input-login-signup" type="password" placeholder="Password" name="password" [(ngModel)]="loginCredentials.password" required>Password</ion-input>
-
+              <br>
               <form>
               <h6 clear (click)="clickForgetPassword()" style="float: right; color: white; font: icon;">Forget Password ?</h6>
               </form>

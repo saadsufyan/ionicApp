@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { SettingsPage } from '../settings/settings';
 /**
  * Generated class for the TermsAndConditionsPage page.
  *
@@ -20,6 +20,10 @@ export class TermsAndConditionsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TermsAndConditionsPage');
+  }
+
+  backToSettings(){
+    this.navCtrl.push(SettingsPage);
   }
 
 }

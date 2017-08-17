@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SettingsPage } from '../settings/settings';
 
 /**
  * Generated class for the FaqPage page.
@@ -20,6 +21,9 @@ export class FaqPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FaqPage');
+  }
+  backToSettings(){
+    this.navCtrl.push(SettingsPage);
   }
 
 }

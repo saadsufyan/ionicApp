@@ -7,10 +7,10 @@ page-register {
 
 .image-center{
 
-    max-width: 300px;
-    margin: auto;
-    padding-left: 50px;
-    padding-bottom: 20px;
+    //max-width: 300px;
+    //margin: auto;
+    //padding-left: 50px;
+    //padding-bottom: 20px;
     
 }
 
@@ -59,19 +59,20 @@ page-register {
     background: url('../assets/icon_email.png') !important;
     background-repeat: no-repeat !important;
     background-size: 20px !important;
-    background-position: 5px 20px !important;
+    background-position: 5px 14px !important;
 }
 
 .input-phone{
     background: url('../assets/icon_call.png') !important;
     background-repeat: no-repeat !important;
     background-size: 20px !important;
-    background-position: 5px 15px !important;
+    background-position: 5px 10px !important;
 }
 
 .input-confirmpassword{
     background: url('../assets/icon_password.png') !important;
     background-repeat: no-repeat !important;
     background-size: 20px !important;
-    background-position: 5px 10px !important;
+    background-position: 5px 5px !important;
 }
+

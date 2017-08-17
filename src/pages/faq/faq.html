@@ -4,15 +4,65 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header class="header-home">
+  <div class="col-xs-12">
+  <div class="col-xs-9" style="padding: 0px 0px 0px 75px;">
+    <ion-title style="text-align:center">FAQ's</ion-title>
+   
+  </div>
+    <ion-icon class="back-icon tncBack-icon" ios="ios-arrow-back" md="ios-arrow-back" (click)="backToSettings()" ></ion-icon>
 
-  <ion-navbar>
-    <ion-title>faq</ion-title>
-  </ion-navbar>
-
+  </div>
 </ion-header>
 
 
 <ion-content padding>
+  <div class="col-xs-12 faqs">
 
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" style="text-decoration: none !important;" class="caret-arrow" data-parent="#accordion" href="#collapse1">
+            <h4><b>It is a long established fact.</b></h4>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" style="text-decoration: none !important;" class="caret-arrow" data-parent="#accordion" href="#collapse2">
+            <h4><b>It is a long established fact.</b></h4>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" style="text-decoration: none !important;" class="caret-arrow" data-parent="#accordion" href="#collapse3">
+            <h4><b>It is a long established fact.</b></h4>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+
+</div>
 </ion-content>
